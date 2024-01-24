@@ -6,7 +6,7 @@ void main(){
     if(file!=NULL){
         char ch[100];
         if(fgets(ch,100,file)!=NULL){
-            printf("%S",ch);
+            printf("%s",ch);
         }
         fclose(file);
     }else{printf("error!!!");}
