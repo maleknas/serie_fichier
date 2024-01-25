@@ -14,7 +14,7 @@ void main(){
     FILE* file=fopen(noun,"r");
     if(file!=NULL){
         char ch[100];
-        if(fgets(ch,100,file)!=NULL){
+        while(fgets(ch,100,file)!=NULL){
             printf("%s",ch);
         }
         fclose(file);
